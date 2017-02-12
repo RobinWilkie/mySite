@@ -1,0 +1,335 @@
+/* stylesheet for robinwilkie.co.uk */
+
+
+/* add custom font */
+
+@font-face {
+    font-family: aquag;
+    src: url('../fonts/aqua.ttf') format('truetype');
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: aquag;
+}
+
+#home {
+    height: 100vh;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 96vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 8vh;
+    padding: 1vh;
+}
+
+nav {
+    padding: 1vh;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 1vw;
+}
+
+a,
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+nav a:hover {
+    color: #C0A062;
+}
+
+#title {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #C0A062;
+    font-size: 10vh;
+}
+
+p,
+h3 {
+    color: #FFFFFF;
+}
+
+h3 span {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2em;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.up img,
+.down img {
+    height: 5vh;
+    padding: 1vh 0;
+}
+
+.icons {
+    width: 4vw;
+}
+
+.icons:hover {
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Styling for about section */
+
+#about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C0A062;
+}
+
+#about p {
+    color: #212121;
+    text-align: center;
+}
+
+#aboutme {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutme img {
+    height: 35vh;
+    border: 4px solid #212121;
+    border-radius: 50%;
+}
+
+
+/* ---------- Styling for work section ---------- */
+
+#work {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212121;
+}
+
+#work h2 {
+    color: #C0A062;
+}
+
+#workPics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.thumb {
+    width: 22vw;
+    height: 28vh;
+    border-radius: 4px;
+    border: 3px solid #C0A062;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.thumb:hover {
+    box-shadow: 0 0 10px #C0A062;
+}
+
+
+/* ---------- Styling for contact section ---------- */
+
+#contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C0A062;
+}
+
+#contactContainer {
+    height: 90%;
+}
+
+form {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    background-color: #fff;
+    border-color: #007E91;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+    border-width: 2px;
+    border-style: solid;
+    color: #474e57;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px;
+    margin: 0 0 10px 0;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+form input:focus {
+    box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+}
+
+form button {
+    width: 100%;
+    background-color: #007E91;
+    color: #C0A062;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+    font-family: aquag;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+}
+
+
+/* hover effect for button */
+
+@-webkit-keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+
+@keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+
+.hvr-ripple-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+}
+
+.hvr-ripple-out:before {
+    content: '';
+    position: absolute;
+    border: #007E91 solid 6px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.hvr-ripple-out:hover:before,
+.hvr-ripple-out:focus:before,
+.hvr-ripple-out:active:before {
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out;
+}
+
+form button:active {
+    content: 'thanks';
+}
+
+#back {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+#back:hover {
+    color: #212121;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 7vh;
+    }
+    #about p {
+        font-size: 0.8em;
+    }
+    .thumb {
+        width: 40vw;
+        height: 12vh;
+    }
+    .icons {
+        width: 10vw;
+    }
+}
