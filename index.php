@@ -5,9 +5,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robin Wilkie web design and development in Glasgow Scotland">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="Robin Wilkie">
     <title>Robin Wilkie Home Page</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="css/lightbox.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 </head>
@@ -60,7 +64,7 @@
         <div id="aboutme">
             <h2>ABOUT ME</h2>
             <img src="images/robinwilkie.jpg">
-            <p>I am currently an Interactive Media student based in Glasgow, Scotland. I specialise in front-end development using HTML, CSS and Javascript. I'm constantly looking to improve my skills and understanding in all aspects of web and mobile development. I also enjoy music, photography and drinking an unhealthy amount of coffee.</p>
+            <p>I'm currently an Interactive Media student based in Glasgow, Scotland. I specialise in front-end development using HTML, CSS and Javascript. I'm constantly looking to improve my skills and understanding in all aspects of web and mobile development. I also enjoy music, photography and drinking an unhealthy amount of coffee.</p>
         </div>
 
         <div id="aboutLinks">
@@ -186,11 +190,18 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="js/animatelo.min.js"></script>
+    <script>
+        var options = {
+            delay: 800,
+        };
+        window.animatelo.slideInDown('nav', options);
+    </script>
     <script>
         $(document).ready(function () {
-            $("#name").hide(0).delay(100).fadeIn(3000);
-            $("#subhead1").hide(0).delay(200).fadeIn(3000);
-            $("#subhead2").hide(0).delay(300).fadeIn(3000);
+            $("#name").hide(0).delay(300).fadeIn(3000);
+            $("#subhead1").hide(0).delay(310).fadeIn(3000);
+            $("#subhead2").hide(0).delay(320).fadeIn(3000);
         });
 
         $(function () {
